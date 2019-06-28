@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 
 public class MovieAdapter extends BaseAdapter {
@@ -48,20 +49,20 @@ public class MovieAdapter extends BaseAdapter {
     }
 
     private class ViewHolder {
-        private TextView txtName;
-        private TextView txtDescription;
+        private TextView txtTitle;
+        private TextView txtOverview;
         private ImageView imgPhoto;
 
         ViewHolder(View view) {
-            txtName = view.findViewById(R.id.txt_name);
-            txtDescription = view.findViewById(R.id.txt_description);
+            txtTitle = view.findViewById(R.id.txt_name);
+            txtOverview = view.findViewById(R.id.txt_description);
             imgPhoto = view.findViewById(R.id.img_photo);
         }
 
         void bind(Movie movie) {
-            txtName.setText(movie.getTitle());
-            txtDescription.setText(movie.getOverview());
-            imgPhoto.setImageResource(movie.getImage());
+            txtTitle.setText(movie.getTitle());
+            txtOverview.setText(movie.getOverview());
+            Glide.with(context).load(movie.getImage()).into(imgPhoto);
         }
     }
 }
