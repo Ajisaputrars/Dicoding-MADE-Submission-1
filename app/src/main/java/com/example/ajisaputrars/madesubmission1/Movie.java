@@ -1,13 +1,21 @@
 package com.example.ajisaputrars.madesubmission1;
 
-import java.util.Date;
-
 public class Movie {
     private int id;
     private String title;
     private String overview;
     private String date;
-    private float vote_average;
+    private double vote_average;
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
+    }
+
+    private int image;
 
     public int getId() {
         return id;
@@ -41,11 +49,11 @@ public class Movie {
         this.date = date;
     }
 
-    public float getVote_average() {
+    public double getVote_average() {
         return vote_average;
     }
 
-    public void setVote_average(float vote_average) {
+    public void setVote_average(double vote_average) {
         this.vote_average = vote_average;
     }
 }

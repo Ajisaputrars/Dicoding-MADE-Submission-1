@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_toEndOf="@id/img_photo"
-        android:text="XXXX"
+        android:text="@string/lorem__short_sample"
         android:textSize="18sp"
         android:textStyle="bold" />
     <TextView
@@ -27,7 +27,7 @@
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/img_photo"
         android:ellipsize="end"
-        android:maxLines="3"
-        android:text="XXXX" />
+        android:maxLines="6"
+        android:text="@string/lorem__long_sample" />
 
 </RelativeLayout>
