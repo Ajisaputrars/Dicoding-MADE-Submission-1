@@ -9,11 +9,14 @@ Project ini merupakan Submission 1 kelas Menjadi Android Developer Indonesia (MA
 - Menampilkan gambar dan rincian film.
 - Menggunakan Parcelable untuk pemindahan objek antar Activity.
 
-
-### Screenshot 
+### Screenshot
 
 <p align="center">
-  <img src="https://github.com/Ajisaputrars/Project-PopularMoviesApp-Android/blob/master/image3.png" width="750" align="center">
+  <img src="https://github.com/Ajisaputrars/Dicoding-MADE-Submission-1/blob/master/Screenshot_20190629-184132.png" width="750" align="center">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Ajisaputrars/Dicoding-MADE-Submission-1/blob/master/Screenshot_20190629-184140.png" width="750" align="center">
 </p>
 
 ### **Author**
@@ -28,4 +31,4 @@ This project is licensed under the GNU General Public License v3.0 - see the [**
 
 
 [1]:	https://github.com/Ajisaputrars
-[2]:	XXXXXXXXX
+[2]:	https://github.com/Ajisaputrars/Dicoding-MADE-Submission-1/blob/master/LICENSE
