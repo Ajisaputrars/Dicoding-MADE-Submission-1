@@ -76,10 +76,32 @@ public class MovieData {
                 7.8,
                 6.9
         };
+
         ArrayList<Double> list = new ArrayList<>();
         for (Double aData : averages) {
             list.add(aData);
         }
         return list;
+    }
+
+    public static ArrayList<Integer> getImages() {
+        Integer[] images = {
+                R.drawable.poster1,
+                R.drawable.poster2,
+                R.drawable.poster3,
+                R.drawable.poster4,
+                R.drawable.poster5,
+                R.drawable.poster6,
+                R.drawable.poster7,
+                R.drawable.poster8,
+                R.drawable.poster9,
+                R.drawable.poster10
+        };
+
+        ArrayList<Integer> imageArray = new ArrayList<>();
+        for (int image : images) {
+            imageArray.add(image);
+        }
+        return imageArray;
     }
 }
