@@ -9,16 +9,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <ImageView
+                android:id="@+id/iv_image"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:adjustViewBounds="true"
                 android:src="@drawable/poster_sample"
                 android:scaleType="fitCenter"/>
+
             <TextView
+                android:id="@+id/tv_vote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
@@ -32,6 +37,7 @@
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_gravity="bottom" />
+
         </FrameLayout>
 
         <LinearLayout
@@ -41,6 +47,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -60,12 +67,13 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="@dimen/activity_square_small_icon"
-                    android:layout_height="@dimen/activity_square_small_icon"
+                    android:layout_width="@dimen/activity_square_width_small_icon"
+                    android:layout_height="@dimen/activity_square_width_small_icon"
                     android:adjustViewBounds="true"
                     android:src="@drawable/calendar"/>
 
                 <TextView
+                    android:id="@+id/tv_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/date__sample"
@@ -75,12 +83,16 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/tv_overview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lorem__long_sample"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:textColor="@android:color/black"/>
+
         </LinearLayout>
+
     </LinearLayout>
+
 </ScrollView>

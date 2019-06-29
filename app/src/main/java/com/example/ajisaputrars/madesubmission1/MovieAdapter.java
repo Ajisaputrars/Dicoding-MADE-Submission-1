@@ -7,7 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class MovieAdapter extends BaseAdapter {
@@ -17,6 +19,7 @@ public class MovieAdapter extends BaseAdapter {
     public void setMovies(ArrayList<Movie> movies) {
         this.movies = movies;
     }
+
     public MovieAdapter(Context context) {
         this.context = context;
         movies = new ArrayList<>();

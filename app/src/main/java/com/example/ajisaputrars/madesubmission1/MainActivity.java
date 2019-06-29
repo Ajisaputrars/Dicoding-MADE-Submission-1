@@ -1,19 +1,20 @@
 package com.example.ajisaputrars.madesubmission1;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
-
-import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<String>titles;
-    private ArrayList<String>overviews;
-    private ArrayList<String>dates;
-    private ArrayList<Double>voteAverages;
+    private ArrayList<String> titles;
+    private ArrayList<String> overviews;
+    private ArrayList<String> dates;
+    private ArrayList<Double> voteAverages;
     private ArrayList<Integer> imageIds = new ArrayList<>();
     private ArrayList<Movie> movies;
     private MovieAdapter adapter;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         titles = MovieData.getTitles();
         overviews = MovieData.getOverviews();
@@ -33,8 +34,16 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MovieAdapter(this);
         ListView listView = findViewById(R.id.lv_list);
         listView.setAdapter(adapter);
-
         addItem();
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent moveWithObjectIntent = new Intent(MainActivity.this, DetailFilmActivity.class);
+                moveWithObjectIntent.putExtra(DetailFilmActivity.EXTRA_MOVIE, movies.get(i));
+                startActivity(moveWithObjectIntent);
+            }
+        });
     }
 
     private void addItem() {
@@ -51,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
         adapter.setMovies(movies);
     }
 
-    private void getImageIds(){
+    private void getImageIds() {
         String poster = "poster";
-        for (int i=1; i<=titles.size(); i++){
+        for (int i = 1; i <= titles.size(); i++) {
             String generatedString = poster + String.valueOf(i);
             int id = getResources().getIdentifier("com.example.ajisaputrars.madesubmission1:drawable/" + generatedString, null, null);
             imageIds.add(id);

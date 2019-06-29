@@ -18,7 +18,7 @@ public class MovieData {
         };
 
         ArrayList<String> list = new ArrayList<>();
-        for (String aData: titles) {
+        for (String aData : titles) {
             list.add(aData);
         }
         return list;
@@ -39,7 +39,7 @@ public class MovieData {
         };
 
         ArrayList<String> list = new ArrayList<>();
-        for (String aData: overviews) {
+        for (String aData : overviews) {
             list.add(aData);
         }
         return list;
@@ -58,10 +58,11 @@ public class MovieData {
                 "09/11/2019"
         };
         ArrayList<String> list = new ArrayList<>();
-        for (String aData: dates) {
+        for (String aData : dates) {
             list.add(aData);
         }
-        return list;       }
+        return list;
+    }
 
     public static ArrayList<Double> getVoteAverages() {
         double[] averages = {9.4,
@@ -76,7 +77,7 @@ public class MovieData {
                 6.9
         };
         ArrayList<Double> list = new ArrayList<>();
-        for (Double aData: averages) {
+        for (Double aData : averages) {
             list.add(aData);
         }
         return list;
