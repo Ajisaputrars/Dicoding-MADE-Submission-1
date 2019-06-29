@@ -12,11 +12,11 @@ Project ini merupakan Submission 1 kelas Menjadi Android Developer Indonesia (MA
 ### Screenshot
 
 <p align="center">
-  <img src="https://github.com/Ajisaputrars/Dicoding-MADE-Submission-1/blob/master/Screenshot_20190629-184132.png" width="750" align="center">
+  <img src="https://github.com/Ajisaputrars/Dicoding-MADE-Submission-1/blob/master/Screenshot_20190629-184132.png" width="250" align="center">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Ajisaputrars/Dicoding-MADE-Submission-1/blob/master/Screenshot_20190629-184140.png" width="750" align="center">
+  <img src="https://github.com/Ajisaputrars/Dicoding-MADE-Submission-1/blob/master/Screenshot_20190629-184140.png" width="250" align="center">
 </p>
 
 ### **Author**
